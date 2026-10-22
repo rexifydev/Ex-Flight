@@ -1,0 +1,135 @@
+#navi{
+    display: block;
+    text-align: center;
+    height: 45px;
+    background-color: rgb(29, 29, 29);
+    overflow: hidden;
+    margin:none;
+    animation-name: downdrop;
+    animation-duration: 2s;
+
+   
+}
+
+body{
+    margin:0;
+}
+
+#navi a{
+    text-decoration: none;
+    padding: 10px;
+    color:white;
+    float:left;
+    display:block;
+    
+}
+
+#navi a:hover{
+    background-color: rgb(182, 182, 182);
+    color:black;
+}
+
+#para1{
+    text-align: center;
+    top: 24px;
+    padding:30px;
+    font-family: sans-serif;
+    display:none
+    
+}
+
+.boeing #box01:hover{
+    background-color: rgb(255, 250, 234);
+    border:2px solid rgb(204, 204, 204)
+    
+}
+.airbus #box01:hover{
+    background-color: rgb(234, 241, 255);
+    border:2px solid rgb(204, 204, 204)
+    
+}
+
+
+#box01{height:300 ;
+
+}
+#box01:hover p{
+    display: block;
+    animation-name: updrop;
+    animation-duration: 2s;
+    
+}
+#box01:hover a{
+    display: block;
+    animation-name: updrop;
+    animation-duration: 2s;
+}
+
+#para1::selection{
+    background-color: rgb(255, 251, 0);
+    color:rgb(5, 3, 3)
+}
+
+#box01 a{
+    display: none;
+    color:rgb(255, 208, 0)
+}
+
+#box455 a{
+    padding:10px;
+    text-decoration: none;
+    color:black;
+    border-radius: 10px;
+    
+    
+
+}
+#tt{
+    background-color: rgb(255, 208, 0);
+    
+}
+
+#tta{
+    background-color: rgb(0, 153, 255);
+    
+}
+#box455 a:hover{
+    background-color: rgb(39, 39, 39);
+    color:white
+}
+
+#box455{
+    text-align:center;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+    #box01 {
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes downdrop{
+    from{transform: translateY(-25px)}
+}
+
+@keyframes updrop{
+    from{transform: translateY(15px);}
+}
+
